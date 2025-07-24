@@ -1,0 +1,212 @@
+.products-page {
+  padding: 2rem;
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(120deg, #fffdfa 0%, #fdf6f0 100%);
+  min-height: 100vh;
+}
+
+.products-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  color: #ff914d;
+  text-shadow: 1px 1px 0 #fff;
+  letter-spacing: 1px;
+}
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.filter-buttons button {
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 20px;
+  background: #fff3e6;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(.4,1.5,.5,1);
+  box-shadow: 0 1px 6px rgba(255,186,120,0.07);
+}
+
+.filter-buttons button:hover {
+  background: #ffe5cc;
+  color: #333;
+}
+
+.filter-buttons .active {
+  background: linear-gradient(90deg, #ffd6b3 60%, #ff914d 100%);
+  color: white;
+  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(255,186,120,0.10);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.product-card {
+  background: rgba(255,255,255,0.7);
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(255,186,120,0.08), 0 1.5px 8px rgba(255,186,120,0.05);
+  text-align: center;
+  transition: box-shadow 0.22s, transform 0.22s, border-color 0.18s, background 0.18s;
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  border: 1.5px solid #ffe5cc;
+  backdrop-filter: blur(8px) saturate(1.05);
+  -webkit-backdrop-filter: blur(8px) saturate(1.05);
+  position: relative;
+  overflow: hidden;
+}
+.product-card:hover {
+  box-shadow: 0 8px 32px rgba(255,186,120,0.13), 0 6px 24px rgba(255,186,120,0.09);
+  border-color: #ffd6b3;
+  background: rgba(255,255,255,0.88);
+}
+
+.product-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s;
+  box-shadow: 0 2px 12px rgba(255,186,120,0.08);
+}
+.product-image:hover {
+  transform: scale(1.04);
+}
+
+.product-card h3 {
+  font-size: 1.18rem;
+  margin-bottom: 0.4rem;
+  color: #222;
+  font-weight: 600;
+}
+
+.product-card p {
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+  color: #666;
+}
+
+.add-to-cart {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.28rem 0.7rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.87rem;
+  transition: background-color 0.3s;
+  margin-top: 0.5rem;
+}
+.add-to-cart:hover {
+  background-color: #444;
+}
+
+.wishlist-btn {
+  margin-top: 10px;
+  border-radius: 4px;
+  padding: 0.28rem 0.6rem;
+  font-weight: 500;
+  font-size: 0.87rem;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.wishlist-btn.in-wishlist {
+  background-color: #ff6b81;
+  color: #fff;
+}
+.wishlist-btn:not(.in-wishlist) {
+  background-color: #f4f4f4;
+  color: #333;
+}
+.wishlist-btn:hover {
+  opacity: 0.9;
+}
+
+.products-page button.go-to-cart {
+  margin: 2rem auto 0;
+  display: block;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 30px;
+  border: none;
+  background: linear-gradient(to right, #ff6a5e, #f7936f);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.products-page button.go-to-cart:hover {
+  background: linear-gradient(to right, #f7936f, #ff6a5e);
+}
+
+.products-header {
+  background: linear-gradient(90deg, #fffdfa 70%, #ffe0c2 100%);
+  padding: 1.2rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 16px rgba(255,186,120,0.10), 0 1.5px 8px rgba(255,186,120,0.06);
+  border-radius: 0 0 18px 18px;
+  margin-bottom: 1.5rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ff914d;
+  cursor: pointer;
+  user-select: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease;
+}
+
+.nav-links button:hover {
+  background-color: #f0f0f0;
+}
+
+.logout-btn {
+  background-color: #ff914d;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #ff6a36;
+}

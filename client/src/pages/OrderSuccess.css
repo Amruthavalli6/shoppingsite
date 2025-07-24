@@ -1,0 +1,109 @@
+/* OrderSuccess.css */
+.order-success-page {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0e7ff, #e4d0ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  animation: fadeIn 0.8s ease-in-out;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.order-success-page h1 {
+  font-size: 2.8rem;
+  color: #6b46c1;
+  margin-bottom: 1rem;
+  animation: popIn 0.5s ease-in-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.order-success-page p {
+  font-size: 1.2rem;
+  color: #444;
+  margin-bottom: 2rem;
+  animation: fadeInText 1s ease-in-out;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.order-summary {
+  background-color: #ffffffee;
+  border: 1px solid #d4c2f0;
+  padding: 20px 30px;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 500px;
+  animation: fadeInSummary 1.2s ease-in-out;
+}
+
+@keyframes fadeInSummary {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.order-summary h3 {
+  color: #4b0082;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.order-summary p {
+  margin: 6px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.order-success-page button {
+  padding: 12px 28px;
+  background-color: #6b46c1;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.order-success-page button:hover {
+  background-color: #5a3c9c;
+}
